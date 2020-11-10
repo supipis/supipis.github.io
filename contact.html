@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact</title>
+        <link rel="stylesheet" href="style.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header-container"></header>
+        
+        <h1>CONTACT ME</h1>
+        <h2>For any enquiries or just to say hello, I am available right now.</h2>
+
+        <div class="form-container">
+            <form id="contactme-form" action="https://formspree.io/f/xaylbyzb" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="firstname">
+            
+            <label for="email">Email</label>
+            <input type="text" id="mail" name="email">
+
+            <label for="message">Message</label>
+            <textarea name="textbox" id="message" cols="61" rows="6"></textarea>
+
+            <input type="submit" value="Submit" onclick="clearInput()" name="submision">
+            <div style="clear:both"></div>
+        </form>
+        </div>
+        <div class="contact-follow">
+            <div class="contactme">
+                <i class="fas fa-map-marker-alt"> Stockholm, Sweden</i><br>
+                <i class="fas fa-phone-alt"> +46 763262839</i><br>
+                <i class="fas fa-envelope-open-text"> nirmanialgama@gmail.com</i>
+            </div>
+            <div class="followme">
+        <h5>Follow me on <br> 
+            <a href="https://www.linkedin.com/in/supipis/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/SupipiS"><i class="fab fa-github-square"></i></a>
+            <a href="https://mobile.twitter.com/supipi_s"><i class="fab fa-twitter-square"></i></a></h5>
+        </div>
+    </div>
+
+
+        
+        <script  src="script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,181 @@
+body{
+    padding: .1em 1.5em;
+    
+
+}
+h1, h2, h3, h4, p{
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-size: 46px;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+
+
+.intro-pic{
+    background-image: url("pic.jpg");
+    height: 550px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-left: 4em;
+    margin-right: 1em;
+    position: relative;
+    z-index: -1;
+}
+
+.intro-text{
+    font-style: italic; 
+    font-size: 35px;
+    position: absolute;
+    z-index: 1;
+    padding-top: 3em;
+     
+}
+
+h2{
+    font-style: italic;
+    text-align: center;
+    font-size: 35px;
+}
+
+p{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+h4{
+    font-size: 25px;
+    
+}
+#nav {
+    list-style-type: none;
+    float: right;
+  }
+
+.link{
+    display: inline;
+}
+
+li a {
+  
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+#header-container{
+    padding-bottom: .2em;
+    
+}
+
+#languages{
+    list-style-type: none;
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+wrap {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .bar {
+    background: #3bc28e;
+    width: 0;
+    margin: .25em 0;
+    color: #fff;
+    position: relative;
+    transition: width 2s, background .2s;
+    clear: both;
+  }
+  .bar:nth-of-type(odd) {
+    background: #459173;
+  }
+  .bar .label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    padding: .5em;
+    background: #686666;
+    width: 5em;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+  }
+  .bar .label.second {
+    background: rgb(65, 70, 69);
+  }
+  .count {
+    position: absolute;
+    right: .25em;
+    top: .75em;
+    padding: .15em;
+    font-size: .75em;
+    font-weight: bold;
+  }
+
+
+  #projects {
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    line-height: 2em;
+    font-size: 20px;
+  }
+
+  input[type=text], #message{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .form-container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 3px solid black;
+    box-shadow: 5px 10px rgb(41, 38, 38);
+  }
+
+  input[type=submit]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Playfair Display', serif;
+    float: right;
+  }
+
+  .contact-follow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    padding-top: 1em;
+    
+  }
+
+  .followme{
+    padding-left: 7em;
+    margin-top: -25px;
+  }
+
+  h5{
+    font-size: 20px;
+    
+  }
+
+
