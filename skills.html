@@ -6,6 +6,29 @@
     <title>skills</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <script type="module">
+        import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+        // Create a personal access token at https://github.com/settings/tokens/new?scopes=repo
+        const octokit = new Octokit({ auth: `ae9d7d294aaa7a35ce79bf0aa59fead64a2ff620` });
+        async function loadData() {
+            const response = await octokit.request("GET /users/:username/repos", {
+                username: "supipis",
+                type: "public",
+            });
+            return response;
+        }
+        const projects = document.querySelector('.projects');
+        loadData().then(response => {
+            return response.data;
+        }).then(projectsArray => {
+            projectsArray.filter(p => p.homepage).forEach(project => {
+                let item = document.createElement("a");
+                item.setAttribute("href", project.homepage ? project.homepage : project.html_url);
+                item.textContent = project.name;
+                projects.appendChild(item)
+            });
+        })
+    </script>
 </head>
 <body>
     <header id="header-container"></header>
@@ -13,12 +36,8 @@
     <h1>SHOWCASE</h1>
     <h2>Here are some websites I have built as a part
          of my course work.</h2>
-         <ul id="projects">
-             <li id="task">Sugar lips website</li>
-             <li id="task">Number guesser</li>
-             <li id="task">Navigation game</li>
-             <li id="task">Habit tracker</li>
-         </ul>
+        <div class="projects">
+        </div>
         <h2>...more to come</h2>
 
 
