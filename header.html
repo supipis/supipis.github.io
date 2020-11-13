@@ -7,14 +7,20 @@
     </head>
     <body>
         <header id="header-container">
-            <ul id="nav">
-                <li class="link"><a href="index.html">About</a></li>
-                <li class="link"><a href="edu.html">Education</a></li>
-                <li class="link"><a href="skills.html">Skills</a></li>
-                <li class="link"><a href="contact.html">Contact me</a></li>
-                
-            </ul>
-        </header>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn icon" onclick="closeNav()">&times;</a>
+                <a href="index.html">About</a>
+                <a href="edu.html">Education</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact me</a>
+            </div>
+            
+            <div id="main">
+                <span id="greet" onclick="openNav()">&#9776; Hello, there!</span>
+                <hr>
+            </div>
+
+
         <script src="script.js"></script>
     </body>
     </html>
