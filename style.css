@@ -202,11 +202,14 @@ h5 {
 }
 
 .projects a {
+  margin-top: 1em;
   display: block;
-  font-size: 35px;
+  font-size: 27px;
   text-align: center;
-  
-  color: #111;
+}
+
+.projects {
+  padding-bottom: 180px;
 }
 
 @media screen and (max-height: 450px) {
